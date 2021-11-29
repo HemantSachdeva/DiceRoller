@@ -21,6 +21,9 @@ class MainActivity : AppCompatActivity() {
         // Find the Button in the layout
         val rollButton: Button = findViewById(R.id.button)
 
+        // Show a random dice view when user opens the app
+        rollDice()
+
         // Set a click listener on the button to roll the dice when the user taps the button
         rollButton.setOnClickListener{
             rollDice()
